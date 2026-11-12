@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 260px;
+      font-family: Arial, sans-serif;
+      padding: 12px;
+      background-color: #f9f9f9;
+    }
+    h3 {
+      margin: 0 0 10px 0;
+      color: #cc0000;
+      font-size: 16px;
+    }
+    label {
+      font-size: 12px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+    input {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background-color: #cc0000;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #aa0000;
+    }
+    .clock-box {
+      margin-top: 12px;
+      padding: 8px;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    #live-clock {
+      font-size: 14px;
+      font-weight: bold;
+      color: #222;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h3>YouTube Time Machine</h3>
+  
+  <label for="target-datetime">Pick Date & Time:</label>
+  <input type="datetime-local" id="target-datetime">
+  
+  <button id="set-time-btn">Travel to This Time</button>
+  
+  <div class="clock-box">
+    <span style="font-size: 11px; color: #666;">CURRENT VIRTUAL TIME:</span>
+    <div id="live-clock">Not set yet</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

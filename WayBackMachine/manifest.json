@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Time Machine",
+  "version": "1.0",
+  "description": "Travel back to any year and exact time on YouTube.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "http://www.youtube.com/*"
+      ],
+    
+      "js": ["content.js"]
+    }
+  ]
+}
